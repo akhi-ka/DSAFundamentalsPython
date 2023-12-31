@@ -2,7 +2,7 @@
 Python Script to Replace 'pi' in a String with '3.14' Using Recursion
 
 This script defines a function `replacePi` that replaces every occurrence of the substring 'pi' with '3.14' in a given string, using recursion.
-It demonstrates the use of recursion in Python for string manipulation and includes examples of how to use the function.
+It demonstrates the use of recursion in Python for string manipulation and includes various examples of how to use the function.
 
 Functions:
     replacePi(s): Replace all occurrences of 'pi' with '3.14' in string 's'.
@@ -11,10 +11,6 @@ Functions:
 def replacePi(s):
     """
     Replace all occurrences of 'pi' in string 's' with '3.14', using recursion.
-
-    The function recursively processes each part of the string. If the first two characters of a substring are 'pi',
-    they are replaced with '3.14'. Otherwise, the first character is kept unchanged. 
-    The base case is reached when the string is empty or has only one character.
 
     Parameters:
     - s (str): The string in which the replacement is to be performed.
@@ -41,3 +37,12 @@ if __name__ == "__main__":
     string_to_be_replaced = "pidapipicdxcdppi"
     print(f"Replacing 'pi' with '3.14' in '{string_to_be_replaced}': {replacePi(string_to_be_replaced)}")
 
+    # Additional Examples
+    example_string = "pippipippi"
+    print(f"Replacing 'pi' with '3.14' in '{example_string}': {replacePi(example_string)}")
+
+    example_string = "xpixxpiypix"
+    print(f"Replacing 'pi' with '3.14' in '{example_string}': {replacePi(example_string)}")
+
+    example_string = "this is a simple test"
+    print(f"Replacing 'pi' with '3.14' in '{example_string}': {replacePi(example_string)}")
