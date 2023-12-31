@@ -2,7 +2,7 @@
 Python Script for Merge Sort on a List
 
 This script defines functions `merge` and `mergeSort` to sort a list using the Merge Sort algorithm, a divide-and-conquer sorting technique.
-It demonstrates the use of recursion in Python for sorting a list and includes an example of how to use these functions.
+It demonstrates the use of recursion in Python for sorting a list and includes various examples of how to use these functions.
 
 Functions:
     merge(l1, l2, l): Merge two sorted sublists (l1 and l2) into a single sorted list (l).
@@ -12,9 +12,6 @@ Functions:
 def merge(l1, l2, l):
     """
     Merge two sorted sublists (l1 and l2) into a single sorted list (l).
-
-    The function iteratively compares elements of the two sublists and 
-    merges them into a single sorted list.
 
     Parameters:
     - l1 (list): The first sorted sublist.
@@ -48,9 +45,6 @@ def mergeSort(l):
     """
     Sorts the list 'l' using the Merge Sort algorithm.
 
-    The function recursively divides the list into two halves, sorts each half, 
-    and then merges them back together in sorted order.
-
     Parameters:
     - l (list): The list to be sorted.
 
@@ -72,3 +66,16 @@ if __name__ == "__main__":
     list_of_elements = [1, 10, 5, 8, 6, 3, 9, 2, 4, 7]
     mergeSort(list_of_elements)
     print(f"Sorted list: {list_of_elements}")
+
+    # Additional Examples
+    example_list = [20, 5, 15, 10, 0, 25, 30]
+    mergeSort(example_list)
+    print(f"Sorted list: {example_list}")
+
+    example_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+    mergeSort(example_list)
+    print(f"Sorted list: {example_list}")
+
+    example_list = [8, 4, 7, 3, 2, 9, 5, 1, 6]
+    mergeSort(example_list)
+    print(f"Sorted list: {example_list}")
